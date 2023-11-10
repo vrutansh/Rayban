@@ -25,6 +25,7 @@ html,body{
 }
 
 #top{
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -64,6 +65,7 @@ html,body{
 }
 
 #nav a{
+    pointer-events: all;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -74,7 +76,7 @@ html,body{
 }
 
 #hero{
-    margin-top: 2.3vw;
+    margin-top: 3vw;
     position: absolute;
     top: 50%;
     left: 0;
@@ -107,6 +109,7 @@ html,body{
 }
 
 #hleft button{
+    pointer-events: all;
     margin-top: 2vw;
     padding: .8vw 3vw;
     font-size: 3vw;
@@ -137,7 +140,9 @@ html,body{
     height: 170px;
     margin-top: 20px;
     margin-bottom: 30px;
-    background-color: red;
+    background-image: url(https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBvdHJhaXQlMjBibGFja3xlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: center;
 }
 
 #hright p:nth-child(3){
