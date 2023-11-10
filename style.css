@@ -102,11 +102,19 @@ html,body{
 }
 
 #hleft .elem{
+    position: relative;
     height: 9vw;
     overflow: hidden;
 }
 
+#hleft .elem h1:nth-child(1){
+    top: 0;
+}
+
 #hleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
     line-height: 1;
     font-family: kajiro;
     font-weight: 100;
