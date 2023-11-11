@@ -4,27 +4,28 @@ Shery.mouseFollower();
 
 
 var elems = document.querySelectorAll(".elem")
-elems.forEach(function(elems){
-    var h1 = elems.querySelectorAll("h1");
+
+elems.forEach(function(elem){
+    var h1 = elem.querySelectorAll("h1");
     var i = 0;
     var anni = false;
 
 document.querySelector("#main").addEventListener("click", function () {
    if (!anni){
     anni = true;
-    gsap.to(h1[i],{
-        top:'-=100%',
+    gsap.to(h1[i], {
+        top: "-=100%",
         ease: Expo.easeInOut,
         duration: 1,
         onComplete: function () {
-            gsap.set(this._target[0], {top: "100%" });
+            gsap.set(this._targets[0], {top: "100%" });
             anni = false;
         },  
     });
 
-   i === h1.length - 1 ? (i = 0) : i++;     
+      i === h1.length - 1 ? (i = 0) : i++;     
 
-    gsap.to(h1[i],{
+      gsap.to(h1[i],{
         top:'-=100%',
         ease: Expo.easeInOut,
         duration: 1
